@@ -26,18 +26,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/draw_menu"
+        <ImageButton
+            android:id="@+id/draw_menu_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="15dp"
+            android:background="@drawable/ic_draw_menu"
+            android:backgroundTint="@color/black"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:layout_marginTop="12dp"
-            android:src="@drawable/ic_draw_menu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/catalogText"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/black" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
