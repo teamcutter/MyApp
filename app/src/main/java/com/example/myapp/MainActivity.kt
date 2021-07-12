@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     val catalogFragment = CatalogFragment()
     val profileFragment = ProfileFragment()
+    val status: String = "admin"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
