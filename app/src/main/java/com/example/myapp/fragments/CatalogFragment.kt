@@ -28,7 +28,48 @@ class CatalogFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.drawMenuBtn.setOnClickListener(){
-            Toast.makeText(context, "Hello!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Menu!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn1.setOnClickListener {
+            Toast.makeText(context, "Food!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn2.setOnClickListener {
+            Toast.makeText(context, "Clothes!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn3.setOnClickListener {
+            Toast.makeText(context, "Desktop!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn4.setOnClickListener {
+            Toast.makeText(context, "Laptop!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn5.setOnClickListener {
+            Toast.makeText(context, "Phone!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn6.setOnClickListener {
+            Toast.makeText(context, "Other!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn7.setOnClickListener {
+            Toast.makeText(context, "Car!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn8.setOnClickListener {
+            Toast.makeText(context, "Trip!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn9.setOnClickListener {
+            Toast.makeText(context, "Booking!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn10.setOnClickListener {
+            Toast.makeText(context, "Repair!", Toast.LENGTH_SHORT).show()
         }
     }
+
 }

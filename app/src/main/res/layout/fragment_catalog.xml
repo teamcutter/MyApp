@@ -119,10 +119,12 @@
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -159,13 +161,14 @@
                     android:layout_column="1"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -202,13 +205,14 @@
                     android:layout_column="0"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -245,13 +249,14 @@
                     android:layout_column="1"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -288,13 +293,14 @@
                     android:layout_column="0"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -331,13 +337,14 @@
                     android:layout_column="1"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -373,13 +380,14 @@
                     android:layout_column="0"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_7"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -416,13 +424,14 @@
                     android:layout_column="1"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_8"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -459,13 +468,14 @@
                     android:layout_column="0"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_9"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -502,13 +512,14 @@
                     android:layout_column="1"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIFirst">
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/catalogBtn_10"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"/>
+                        android:background="@drawable/bordered_background_card"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
