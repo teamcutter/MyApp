@@ -80,7 +80,7 @@
                 android:contentDescription="@string/app_name"
                 android:padding="6dp"
                 android:src="@drawable/ic_baseline_search_24"
-                app:tint="@color/MainUI" />
+                app:tint="@color/MainUIFirst" />
 
         </LinearLayout>
 
@@ -117,8 +117,12 @@
                     android:layout_column="0"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -156,7 +160,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -194,7 +203,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -232,7 +246,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -270,7 +289,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -308,7 +332,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -345,7 +374,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -383,7 +417,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -421,7 +460,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -459,7 +503,12 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUI">
+                    app:cardBackgroundColor="@color/MainUIFirst">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordered_background_card"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
