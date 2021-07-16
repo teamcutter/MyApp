@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/MainUI</item>
+        <item name="colorPrimary">@color/MainUIFirst</item>
         <item name="colorPrimaryDark">@color/mainSearchText</item>
         <item name="colorAccent">@color/mainSearchText</item>
         <!-- Customize your theme here. -->

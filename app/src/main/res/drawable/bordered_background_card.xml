@@ -7,9 +7,9 @@
         android:endColor="@color/MainUISecond"
         android:angle="45"/>
     <corners
-        android:radius="2dp"
+        android:radius="8dp"
         android:topRightRadius="0dp"
         android:topLeftRadius="0dp"
-        android:bottomRightRadius="30dp"
-        android:bottomLeftRadius="30dp"/>
+        android:bottomRightRadius="8dp"
+        android:bottomLeftRadius="8dp"/>
 </shape>

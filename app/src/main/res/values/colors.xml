@@ -2,5 +2,7 @@
 <resources>
     <color name="mainText">#FFFFFFFF</color>
     <color name="mainSearchText">#000000</color>
-    <color name="MainUI">#56C596</color>
+    <color name="MainUIFirst">#56C596</color>
+    <color name="MainUISecond">#2C90C4</color>
+    <color name="GradUI">#31CCB0</color>
 </resources>
