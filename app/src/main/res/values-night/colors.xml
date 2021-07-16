@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="mainText">#FFFFFFFF</color>
-    <color name="mainSearchText">#000000</color>
+    <color name="mainText">#000000</color>
+    <color name="mainSearchText">#FFFFFFFF</color>
     <color name="MainUIGreen">#4CB550</color>
 </resources>
