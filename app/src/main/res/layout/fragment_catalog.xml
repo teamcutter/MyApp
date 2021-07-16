@@ -80,7 +80,7 @@
                 android:contentDescription="@string/app_name"
                 android:padding="6dp"
                 android:src="@drawable/ic_baseline_search_24"
-                app:tint="@color/MainUIGreen" />
+                app:tint="@color/MainUI" />
 
         </LinearLayout>
 
@@ -118,7 +118,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -156,7 +156,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -194,7 +194,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -232,7 +232,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -270,7 +270,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -308,7 +308,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -345,7 +345,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -383,7 +383,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -421,7 +421,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -459,7 +459,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/MainUIGreen">
+                    app:cardBackgroundColor="@color/MainUI">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
