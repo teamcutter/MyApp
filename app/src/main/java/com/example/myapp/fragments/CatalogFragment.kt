@@ -10,6 +10,7 @@ import com.example.myapp.R
 import com.example.myapp.databinding.FragmentCatalogBinding
 
 class CatalogFragment : Fragment() {
+    // Checked!!!
     lateinit var binding: FragmentCatalogBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
