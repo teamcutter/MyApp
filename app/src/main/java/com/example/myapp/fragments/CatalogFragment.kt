@@ -11,7 +11,7 @@ import com.example.myapp.databinding.FragmentCatalogBinding
 
 class CatalogFragment : Fragment() {
     lateinit var binding: FragmentCatalogBinding
-
+    // Checked!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
