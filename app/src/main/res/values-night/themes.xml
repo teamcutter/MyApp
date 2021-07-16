@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.MyApp" parent="Theme.MaterialComponents">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/MainUIGreen</item>
+        <item name="colorPrimary">@color/MainUI</item>
         <item name="colorPrimaryDark">@color/mainText</item>
         <item name="colorAccent">@color/mainText</item>
         <!-- Customize your theme here. -->
