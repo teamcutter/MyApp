@@ -20,7 +20,7 @@
             android:layout_marginStart="16dp"
             android:fontFamily="@font/rubik_medium"
             android:text="Catalog"
-            android:textColor="@color/black"
+            android:textColor="@color/mainText"
             android:textSize="33sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
             android:layout_height="40dp"
             android:layout_margin="15dp"
             android:background="@drawable/ic_draw_menu"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/mainText"
             android:foreground="?attr/selectableItemBackgroundBorderless"
             android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,7 @@
                 android:background="@null"
                 android:cursorVisible="true"
                 android:fontFamily="@font/rubik_medium"
-                android:textColor="@color/black"
+                android:textColor="@color/mainSearchText"
                 android:hint="Search..."
                 android:textColorHint="@android:color/darker_gray"
                 android:imeOptions="actionSearch"
@@ -80,7 +80,7 @@
                 android:contentDescription="@string/app_name"
                 android:padding="6dp"
                 android:src="@drawable/ic_baseline_search_24"
-                app:tint="@color/UIGreen" />
+                app:tint="@color/MainUIGreen" />
 
         </LinearLayout>
 
@@ -118,7 +118,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -138,7 +138,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Food"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -156,7 +156,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -176,7 +176,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Clothes"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -194,7 +194,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -214,7 +214,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Desktop"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
@@ -232,7 +232,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -252,7 +252,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Laptop"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
@@ -270,7 +270,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -290,7 +290,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Phone"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
@@ -308,7 +308,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -328,7 +328,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Other"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
@@ -345,7 +345,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -365,7 +365,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Car"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
@@ -383,7 +383,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -403,7 +403,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Trip"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
@@ -421,7 +421,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -441,7 +441,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Booking"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
@@ -459,7 +459,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/UIGreen">
+                    app:cardBackgroundColor="@color/MainUIGreen">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -479,7 +479,7 @@
                             android:layout_marginTop="7dp"
                             android:fontFamily="@font/rubik_medium"
                             android:text="Repair"
-                            android:textColor="@color/black"
+                            android:textColor="@color/mainText"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
