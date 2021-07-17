@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.CatalogFragment">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/catalogHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bordered_background">
+        android:background="@drawable/bordered_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/catalogText"
@@ -31,10 +33,10 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="15dp"
+            android:layout_marginTop="12dp"
             android:background="@drawable/ic_draw_menu"
             android:backgroundTint="@color/mainText"
             android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/catalogText"
@@ -59,18 +61,18 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:textCursorDrawable="@drawable/color_cursor"
                 android:background="@null"
                 android:cursorVisible="true"
                 android:fontFamily="@font/rubik_medium"
-                android:textColor="@color/mainSearchText"
                 android:hint="Search..."
-                android:textColorHint="@android:color/darker_gray"
                 android:imeOptions="actionSearch"
                 android:inputType="text"
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
-                android:textSize="18sp"/>
+                android:textColor="@color/mainSearchText"
+                android:textColorHint="@android:color/darker_gray"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/searchEditTextIcon"
@@ -86,466 +88,20 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_below="@+id/catalogHeader"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:fillViewport="true"
-        android:layout_below="@id/catalogHeader">
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catalogHeader"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <GridLayout
-                android:id="@+id/catalogPanel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_margin="20dp"
-                android:columnCount="2"
-                android:rowCount="5">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_diet"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Food"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="0"
-                    android:layout_column="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_clothes"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Clothes"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="1"
-                    android:layout_column="0"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_desktop"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Desktop"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="1"
-                    android:layout_column="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_laptop"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Laptop"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="2"
-                    android:layout_column="0"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_phone"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Phone"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="2"
-                    android:layout_column="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_vacuum_cleaner"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Other"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp"/>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="3"
-                    android:layout_column="0"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_7"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_car"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Car"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="3"
-                    android:layout_column="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_bay"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Trip"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="4"
-                    android:layout_column="0"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_9"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_hotel"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Booking"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="220dp"
-                    android:layout_gravity="fill"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_row="4"
-                    android:layout_column="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageButton
-                        android:id="@+id/catalogBtn_10"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bordered_background_card"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ic_repair_tools"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/rubik_medium"
-                            android:text="Repair"
-                            android:textColor="@color/mainText"
-                            android:textSize="20sp"/>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </GridLayout>
-        </RelativeLayout>
-
-    </ScrollView>
 </RelativeLayout>
