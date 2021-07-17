@@ -5,21 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RelativeLayout
 import android.widget.Toast
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.myapp.R
-import com.example.myapp.adapter.RecyclerAdapter
 import com.example.myapp.databinding.FragmentCatalogBinding
 
 class CatalogFragment : Fragment() {
-
     lateinit var binding: FragmentCatalogBinding
-    lateinit var gridlayoutManager: GridLayoutManager
-    lateinit var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>
-
+    // Checked!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -34,11 +26,50 @@ class CatalogFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        gridlayoutManager = GridLayoutManager(context, 2, LinearLayoutManager.VERTICAL, false)
-        binding.recycler.layoutManager = gridlayoutManager
 
-        adapter = RecyclerAdapter()
-        binding.recycler.adapter = adapter
+        binding.drawMenuBtn.setOnClickListener(){
+            Toast.makeText(context, "Menu!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn1.setOnClickListener {
+            Toast.makeText(context, "Food!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn2.setOnClickListener {
+            Toast.makeText(context, "Clothes!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn3.setOnClickListener {
+            Toast.makeText(context, "Desktop!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn4.setOnClickListener {
+            Toast.makeText(context, "Laptop!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn5.setOnClickListener {
+            Toast.makeText(context, "Phone!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn6.setOnClickListener {
+            Toast.makeText(context, "Other!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn7.setOnClickListener {
+            Toast.makeText(context, "Car!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn8.setOnClickListener {
+            Toast.makeText(context, "Trip!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn9.setOnClickListener {
+            Toast.makeText(context, "Booking!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.catalogBtn10.setOnClickListener {
+            Toast.makeText(context, "Repair!", Toast.LENGTH_SHORT).show()
+        }
     }
 
 }
