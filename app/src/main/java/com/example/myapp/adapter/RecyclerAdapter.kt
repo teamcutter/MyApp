@@ -16,13 +16,14 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     val cardItem: CardItem = CardItem(
         arrayListOf(
             "Food", "Clothes", "Desktop", "Laptop", "Phone",
-            "Other", "Car", "Trip", "Booking", "Tools"),
+            "Other", "Car", "Trip", "Booking", "Tools", "Rent", "Shipping"),
         arrayListOf(
             R.drawable.ic_diet, R.drawable.ic_clothes,
             R.drawable.ic_desktop, R.drawable.ic_laptop,
             R.drawable.ic_phone, R.drawable.ic_vacuum_cleaner,
             R.drawable.ic_car, R.drawable.ic_bay,
-            R.drawable.ic_hotel, R.drawable.ic_repair_tools))
+            R.drawable.ic_hotel, R.drawable.ic_repair_tools,
+            R.drawable.ic_rent, R.drawable.ic_shipping_truck))
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.cardveiw_item_category, parent, false)
@@ -42,15 +43,26 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         var itemImageButton: ImageButton
         var itemImageView: ImageView
         var itemTextView: TextView
+        var itemImageFvButton: ImageButton
 
         init {
             itemImageButton = itemView.findViewById(R.id.catalog_button_id)
             itemImageView = itemView.findViewById(R.id.catalog_image_id)
             itemTextView = itemView.findViewById(R.id.catalog_title_id)
+            itemImageFvButton = itemView.findViewById(R.id.fv_btn_id)
 
             itemImageButton.setOnClickListener {
                 val position: Int = adapterPosition
                 Toast.makeText(itemView.context, "clicked on ${cardItem.titles[position]}", Toast.LENGTH_SHORT).show()
+            }
+
+            itemImageFvButton.setOnClickListener {
+                val position: Int = adapterPosition
+                it.isSelected = !it.isSelected
+                when(it.isSelected) {
+                    true -> Toast.makeText(itemView.context, "favorite is ${cardItem.titles[position]}", Toast.LENGTH_SHORT).show()
+                    false -> Toast.makeText(itemView.context, "favorite is not ${cardItem.titles[position]}", Toast.LENGTH_SHORT).show()
+                }
             }
 
         }

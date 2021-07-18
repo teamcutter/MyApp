@@ -5,12 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
-import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapp.R
 import com.example.myapp.adapter.RecyclerAdapter
 import com.example.myapp.databinding.FragmentCatalogBinding
 
@@ -33,10 +30,11 @@ class CatalogFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        gridLayoutManager = GridLayoutManager(context, 2, LinearLayoutManager.VERTICAL, false)
+        gridLayoutManager = GridLayoutManager(context, 3, LinearLayoutManager.VERTICAL, false)
         binding.recycler.layoutManager = gridLayoutManager
         adapter = RecyclerAdapter()
         binding.recycler.adapter = adapter
     }
 
 }
+

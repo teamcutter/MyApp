@@ -5,4 +5,5 @@
     <color name="MainUIFirst">#56C596</color>
     <color name="MainUISecond">#2C90C4</color>
     <color name="GradUI">#31CCB0</color>
+    <color name="RedLight">#FF4444</color>
 </resources>

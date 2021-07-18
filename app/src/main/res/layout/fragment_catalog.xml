@@ -29,16 +29,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/draw_menu_btn"
+            android:id="@+id/draw_favorite_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="15dp"
             android:layout_marginTop="12dp"
-            android:background="@drawable/ic_draw_menu"
-            android:backgroundTint="@color/mainText"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/ic_favorite"
+            android:backgroundTint="@color/RedLight"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.553"
             app:layout_constraintStart_toEndOf="@+id/catalogText"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,7 +69,7 @@
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
                 android:textColor="@color/mainSearchText"
-                android:textColorHint="@android:color/darker_gray"
+                android:textColorHint="@color/mainSearchText"
                 android:textCursorDrawable="@drawable/color_cursor"
                 android:textSize="18sp" />
 
