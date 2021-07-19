@@ -37,7 +37,7 @@
             android:layout_marginTop="7dp"
             android:fontFamily="@font/rubik_medium"
             android:text="Catalog title"
-            android:textColor="@color/mainText"
+            android:textColor="@android:color/white"
             android:textSize="20sp" />
 
         <ImageButton

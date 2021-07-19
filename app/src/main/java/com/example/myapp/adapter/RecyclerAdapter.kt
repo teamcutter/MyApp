@@ -15,15 +15,13 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     val cardItem: CardItem = CardItem(
         arrayListOf(
-            "Food", "Clothes", "Desktop", "Laptop", "Phone",
-            "Other", "Car", "Trip", "Booking", "Tools", "Rent", "Shipping"),
+            "Food", "Clothes", "Car", "Laptop", "Phone",
+            "Other", "Desktop", "Trip", "Booking", "Tools", "Rent", "Delivery"),
         arrayListOf(
-            R.drawable.ic_diet, R.drawable.ic_clothes,
-            R.drawable.ic_desktop, R.drawable.ic_laptop,
-            R.drawable.ic_phone, R.drawable.ic_vacuum_cleaner,
-            R.drawable.ic_car, R.drawable.ic_bay,
-            R.drawable.ic_hotel, R.drawable.ic_repair_tools,
-            R.drawable.ic_rent, R.drawable.ic_shipping_truck))
+            R.drawable.ic_diet, R.drawable.ic_clothes, R.drawable.ic_car,
+            R.drawable.ic_laptop, R.drawable.ic_phone, R.drawable.ic_other,
+            R.drawable.ic_desktop, R.drawable.ic_trip, R.drawable.ic_hotel,
+            R.drawable.ic_repair_tools, R.drawable.ic_rent, R.drawable.ic_delivery_truck))
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.cardveiw_item_category, parent, false)
