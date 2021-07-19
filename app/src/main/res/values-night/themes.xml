@@ -3,8 +3,8 @@
     <style name="Theme.MyApp" parent="Theme.MaterialComponents">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/MainUIFirst</item>
-        <item name="colorPrimaryDark">@color/mainText</item>
-        <item name="colorAccent">@color/mainText</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/mainBackGround</item>
         <!-- Customize your theme here. -->
         <item name="windowNoTitle">true</item>
     </style>
