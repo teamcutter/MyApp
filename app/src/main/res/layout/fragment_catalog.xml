@@ -76,14 +76,15 @@
                 android:textSize="18sp" />
 
             <ImageView
-                android:id="@+id/searchEditTextIcon"
+                android:id="@+id/searchEditTextBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/search_icon_background"
                 android:contentDescription="@string/app_name"
                 android:padding="6dp"
                 android:src="@drawable/ic_baseline_search_24"
-                app:tint="@color/MainUIFirst" />
+                app:tint="@color/MainUIFirst"
+                android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
         </LinearLayout>
 
